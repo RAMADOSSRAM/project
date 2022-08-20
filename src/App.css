@@ -81,3 +81,13 @@
   gap: 5px;
 
 }
+.movie-datailcontainer{
+  width: 80%;
+  margin-left: 50px;
+}
+.add-movie{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+}
