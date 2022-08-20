@@ -35,9 +35,9 @@ export function Movies({ movie,id}) {
         </h2>
         <p style={style} className='movie-rating'>⭐{movie.rating}</p>
       </div>
-      
+      <Button onClick={()=>navigate(`/movie/edit/${id}`)}>Edit</Button>
+
       <p style={summarystyles} className='movie-summary'>{movie.summary}</p>
-      <Button>Edit</Button>
       <Counter />
     </div>
   );

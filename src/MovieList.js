@@ -69,8 +69,6 @@ export function AddMovie({ movieList, setMovieList }){
           const newMovie = { name, poster, rating, summary, trailer };
           setMovieList([...movieList, newMovie]);
         }}>Add Movie</Button>
-
-
       </div>
     </div>
   );

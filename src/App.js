@@ -51,6 +51,7 @@ function App() {
       </AppBar>
       
       <Routes>
+        <Route path="/movie/edit/:id" element={<EditMovie />} />
         <Route path="/" element={<Home />} />
         <Route path="/movie" element={<MovieList movieList={movieList} setMovieList={setMovieList} />} />
         <Route path="/movie/add" element={<AddMovie />} />
