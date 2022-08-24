@@ -18,7 +18,6 @@ export function MovieDetails() {
 
   return (
     <div>
-
       <div className='movie-datailcontainer'>
         <iframe width="100%" height="498" src={movie.trailer} alt={movie.trailer}
           title="youtube video"

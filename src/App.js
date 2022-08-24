@@ -14,6 +14,8 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
 import { minHeight } from '@mui/system';
 import { API } from './global';
+import TextField from '@mui/material/TextField';
+
 
 
 
@@ -109,19 +111,19 @@ function EditMovieForm({movie}){
   return(
     <div>
       <div className='add-movie'>
-        <input
+        <TextField
           onChange={(evant) => setName(evant.target.value)}
           type="text" placeholder='Name' value={name} />
-        <input
+        <TextField
           onChange={(evant) => setPoster(evant.target.value)}
           type="text" placeholder='Poster' value={poster} />
-        <input
+        <TextField
           onChange={(evant) => setRating(evant.target.value)}
           type="text" placeholder='Rating' value={rating} />
-        <input
+        <TextField
           onChange={(evant) => setSummary(evant.target.value)}
           type="text" placeholder='Summary' value={summary} />
-        <input
+        <TextField
           onChange={(evant) => setTrailer(evant.target.value)}
           type="text" placeholder='Trailer' value={trailer} />
         <Button variant="contained" onClick={EditMovie}>save</Button>
@@ -139,3 +141,5 @@ function Home(){
   );
 }
 export default App;
+
+

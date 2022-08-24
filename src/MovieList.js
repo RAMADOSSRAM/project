@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import Button from '@mui/material/Button';
 import { API } from './global';
 import { useNavigate } from 'react-router-dom';
+import TextField from '@mui/material/TextField';
 
 export function MovieList() {
   const[movieList,setMovieList]=useState([]);
@@ -50,19 +51,19 @@ export function AddMovie({ movieList, setMovieList }){
   return(
     <div>
       <div className='add-movie'>
-        <input
+        <TextField
           onChange={(evant) => setName(evant.target.value)}
           type="text" placeholder='Name' />
-        <input
+        <TextField
           onChange={(evant) => setPoster(evant.target.value)}
           type="text" placeholder='Poster' />
-        <input
+        <TextField
           onChange={(evant) => setRating(evant.target.value)}
           type="text" placeholder='Rating' />
-        <input
+        <TextField
           onChange={(evant) => setSummary(evant.target.value)}
           type="text" placeholder='Summary' />
-        <input
+        <TextField
           onChange={(evant) => setTrailer(evant.target.value)}
           type="text" placeholder='Trailer' />
         <Button variant="contained" onClick={() => {
